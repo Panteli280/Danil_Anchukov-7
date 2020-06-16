@@ -57,7 +57,7 @@ public class GraphImp {
         return false;
     }
 
-    //проверка на возможность попасть. Если попасть возможно, то дополнительно указывает, куда. Отсюда и не boolean
+    //проверка на возможность попасть в вершину и из неё. Если попасть возможно, то дополнительно указывает, куда. Отсюда и не boolean
      public int checker(int vertex) {
         for (int i = 0; i < verSize; i++) {
             if (mas[vertex][i] == 1 && verList[i].isVisited == false) {
